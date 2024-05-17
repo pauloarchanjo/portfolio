@@ -31,13 +31,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/profile-1715640360704-b4f2b58c1783image?ixlib=imgixjs-3.3.2&crop=faces&fit=crop&w=200&h=200"
+              src="https://avatars.githubusercontent.com/u/85582352?v=4"
               alt="Archanjo's Portrait"
               width="226"
               height="226"
               quality="95"
               priority={true}
-              className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-36 w-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 

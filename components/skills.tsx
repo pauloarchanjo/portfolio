@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -20,7 +20,7 @@ const fadeInAnimationVariants = {
   }),
 };
 
-export default function Skills() {
+const Skills: React.FC = () => {
   const { ref } = useSectionInView("Skills");
 
   return (
@@ -34,13 +34,11 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <motion.li
             className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
-            key={index}
+            key={skill}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{
-              once: true,
-            }}
+            viewport={{ once: true }}
             custom={index}
           >
             {skill}
@@ -49,4 +47,6 @@ export default function Skills() {
       </ul>
     </section>
   );
-}
+};
+
+export default Skills;
