@@ -9,4 +9,4 @@
 </div>
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/pauloarchanjo/portfolio/tree/main?tab=MIT-1-ov-file****).
